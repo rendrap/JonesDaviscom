@@ -1,0 +1,8 @@
+{{site.data.attorneys}}
+<ul>
+    {% for attorney in site.data.attorney %}
+    <li>
+        <a href="/{{attorney.id}}.html">{{ attorney.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
