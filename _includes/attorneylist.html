@@ -1,8 +1,8 @@
-{{site.data.attorneys}}
+{% assign sorted = (site.attorneys | sort: 'sortOrder' | reverse)  %}
 <ul>
-    {% for attorney in site.data.attorney %}
+    {% for attorney in sorted  %}
     <li>
-        <a href="/{{attorney.id}}.html">{{ attorney.name }}</a>
+        <a href="./{{attorney.id}}.html">{{ attorney.name }}</a>
     </li>
     {% endfor %}
 </ul>

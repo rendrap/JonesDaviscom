@@ -6,6 +6,7 @@ states: Texas Japan France
 tagline: Matt is awesome and lives local
 listImage: http://via.placeholder.com/100x100
 detailImage: http://via.placeholder.com/200x200
+sortOrder: 20
 ---
 This is test content for Matt
 
