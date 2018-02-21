@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: noTheme
 title: baseTitleFromPage
 ---
 
@@ -13,4 +13,3 @@ It is our philosophy and commitment to offer legal work of uncompromising qualit
 
 We welcome your interest in our Firm and look forward to serving your legal needs with a level of professionalism and integrity that merits your every confidence.
 
-{% include_relative sitepages/testit.md %}

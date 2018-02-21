@@ -1,7 +1,12 @@
 ---
 ---
-$siteBackGround: darkgray;
+$siteBackGround: #333328;
 $siteForeGround: wheat;
+$siteLinkColor: magenta;
+
+a {
+    color: $siteLinkColor;
+}
 
 body {
     background-color: $siteBackGround;

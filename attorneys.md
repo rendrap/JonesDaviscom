@@ -1,15 +1,14 @@
 ---
-layout: default
+layout: noTheme
 title: Our Team
 detailImage: http://via.placeholder.com/200x200
 ---
+
 
 # Attorneys
 I feel like there should be content here and not just an image
 ![Image of hard working attorneys]({{ page.detailImage }})
 
-
-{% include attorneylist.html %}
 
 {% for attorney in site.attorneys %}
 

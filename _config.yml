@@ -1,5 +1,9 @@
 siteTitle: Site Title
 tagLine: Attorneys and Counselors
+themePath: noTheme
+themeHeader: noTheme/header.html
+themeFooter: noTheme/footer.html
+themeSiteNav: noTheme/siteNav.html
 
 collections:
   attorneys:
