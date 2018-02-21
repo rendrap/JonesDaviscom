@@ -1,3 +1,6 @@
 siteTitle: Site Title
 tagLine: Attorneys and Counselors
 
+collections:
+  attorneys:
+    output: true

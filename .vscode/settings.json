@@ -26,5 +26,8 @@
         "typescriptreact",
         "yaml",
         "yml"
+    ],
+    "cSpell.words": [
+        "endfor"
     ]
 }
