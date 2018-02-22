@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include {{site.themeHead}} %}
+
+  <body>
+
+
+
+    <!-- Page Header -->
+    <div class="page-header-section">
+      <div class="container">
+        <div class="row">
+          <div class="page-header-area">
+            <div class="page-header-content">
+              <h2>Contact Us 1</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <div id="map"></div>
+    <!-- Contact Section -->
+    <section class="contact-form-section section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-50 text-center contact-title-text wow fadeIn" data-wow-delay="0.3s">
+            <h2>Contact with us!</h2>
+            <p>Do you want to know more? We’d love to hear from you!</p>
+          </div>
+          <div class="col-md-4 contact-info-section">
+            <div class="contact-widget office-location">
+              <h2>Office Location</h2>
+              <address>
+                <i class="fa fa-map-marker icon-box icon-xs"></i>4211, 2367 Nash Street , Dearborn, Michigan<br>
+                <i class="fa fa-phone icon-box icon-xs"></i> 313-240-4015<br>
+                <a href="mailto:#"><i class="fa fa-envelope icon-box icon-xs"></i> yourmail@gmail.com</a>
+              </address>
+            </div>
+            <div class="contact-widget office-location">
+              <h2>Contact Hours</h2>
+              <address>
+                <p><i class="fa fa-clock-o icon-box icon-xs"></i> <span>Mon - Fri:</span> 9.00 AM - 6.00 PM</p>
+              </address>
+            </div>
+            <div class="contact-widget social-contact">
+              <h2>Social Quick Links</h2>
+              <a href="#"><i class="fa fa-facebook icon-round icon-xs"></i></a>
+              <a href="#"><i class="fa fa-twitter icon-round icon-xs"></i></a>
+              <a href="#"><i class="fa fa-linkedin icon-round icon-xs"></i></a>
+              <a href="#"><i class="fa fa-google-plus icon-round icon-xs"></i></a>
+              <a href="#"><i class="fa fa-github icon-round icon-xs"></i></a>
+            </div>
+          </div>
+          <div class="col-md-7 col-md-offset-1 contact-form contact-info-section">
+            <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+              <div class="form-group">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" placeholder="Your Name" id="name" class="form-control contact-control" name="name" required data-error="Please enter your name">
+                <div class="help-block with-errors"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" placeholder="Your Email" id="email" class="form-control contact-control" name="email" required data-error="Please enter your Email">
+                <div class="help-block with-errors"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="sr-only">Subject</label>
+                <input type="text" placeholder="Your Subject" id="msg_subject" class="form-control contact-control" name="subject" required data-error="Please enter your message subject">
+                <div class="help-block with-errors"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="sr-only">Message</label>
+                <textarea placeholder="Your Message" rows="7" id="message" class="form-control" name="message" required data-error="Write your message"></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+
+              <button class="btn btn-common btn-lg" type="submit" id="form-submit"><i class="fa fa-envelope"></i> Submit</button>
+              <div id="msgSubmit" class="h3 text-center hidden"></div>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section -->
+    <footer>
+      <!-- Container Starts -->
+      <div class="container">
+        <!-- Row Starts -->
+        <div class="row section">
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-6 col-lg-3 col-xs-12">
+            <h3 class="small-title">
+              About Us
+            </h3>
+            <p>
+              Etiam ornare condimentum massa et scelerisque. Mauris nibh ipsum, laoreet at venenatis ac,
+            </p>
+            <ul class="mb-3">
+              <li><i class="fa fa-map-marke"></i> Nash Street , Dearborn, Michigan</li>
+              <li><i class="fa fa-phone"></i> +68 313-240-405</li>
+              <li><i class="fa fa-phone"></i> +68 32-543-876</li>
+            </ul>
+          </div><!-- Footer Widget Ends -->
+
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-6 col-lg-3 col-xs-12">
+            <h3 class="small-title">
+              Quick Links
+            </h3>
+            <ul class="menu">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Branches</a></li>
+              <li><a href="#">Press Kits</a></li>
+            </ul>
+          </div>
+          <!-- Footer Widget Ends -->
+
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-6 col-lg-3 col-xs-12">
+            <h3 class="small-title">
+              Popular Posts
+            </h3>
+            <ul class="image-list">
+              <li>
+                <figure class="overlay">
+                  <img class="img-fluid" src="assets/img/art/a1.jpg" alt="">
+                </figure>
+                <div class="post-content">
+                  <h6 class="post-title"> <a href="blog-single.html">Business Management Tutorials</a> </h6>
+                  <div class="meta">
+                    <span class="date">5 Comments</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <figure class="overlay">
+                  <img class="img-fluid" src="assets/img/art/a2.jpg" alt="">
+                </figure>
+                <div class="post-content">
+                  <h6 class="post-title"><a href="blog-single.html">Top 10 Business Apps and Web Tools</a></h6>
+                  <div class="meta">
+                    <span class="date">2 Comments</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Footer Widget Ends -->
+
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-6 col-lg-3 col-xs-12">
+            <h3 class="small-title">
+              Newsletter
+            </h3>
+            <form>
+              <input type="text" placeholder="Email here">
+              <button type="submit"><i class="fa fa-paper-plane-o"></i></button>
+            </form>
+            <div class="flicker-gallery">
+              <h3 class="small-title">
+                Instagram
+              </h3>
+              <a href="#" title="Pan Masala"><img src="assets/img/flicker/img1.jpg" alt=""></a>
+              <a href="#" title="Sports Template for Joomla"><img src="assets/img/flicker/img2.jpg" alt=""></a>
+              <a href="" title="Apple Keyboard"><img src="assets/img/flicker/img3.jpg" alt=""></a>
+            </div>
+          </div><!-- Footer Widget Ends -->
+        </div><!-- Row Ends -->
+      </div><!-- Container Ends -->
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <p class="copyright-text">
+                © 2018 Engage All right reserved, Designed by <a href="#">GrayGrids</a>
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="social-footer text-right">
+                <a href="#"><i class="fa fa-facebook icon-round"></i></a>
+                <a href="#"><i class="fa fa-twitter icon-round"></i></a>
+                <a href="#"><i class="fa fa-linkedin icon-round"></i></a>
+                <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright  End-->
+
+    </footer>
+    <!-- Footer Section End-->
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="fa fa-angle-up">
+      </i>
+    </a>
+
+    <!-- JavaScript & jQuery Plugins -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/main.js"></script>
+        <script>
+      function initMap() {
+        var uluru = {lat: 42.314025, lng: -83.255593};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFRf8rAnrraHNX3QttRZ35oo_71di1K_o&callback=initMap">
+    </script>
+
+  </body>
+</html>

@@ -9,3 +9,5 @@ themeSiteNav: engage/siteNav.html
 collections:
   attorneys:
     output: true
+  locations:
+    output: true
