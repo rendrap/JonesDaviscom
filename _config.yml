@@ -1,10 +1,13 @@
 siteTitle: Site Title
 tagLine: Attorneys and Counselors
-themePath: noTheme
-themeHeader: noTheme/header.html
-themeFooter: noTheme/footer.html
-themeSiteNav: noTheme/siteNav.html
+themePath: engage
+themeHead: engage/head.html
+themeHeader: engage/header.html
+themeFooter: engage/footer.html
+themeSiteNav: engage/siteNav.html
 
 collections:
   attorneys:
+    output: true
+  locations:
     output: true
