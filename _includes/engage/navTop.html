@@ -1,0 +1,18 @@
+<ul class="navbar-nav mr-auto w-100 justify-content-end">
+    {% for nav in site.data.siteNavLinks %}
+    <li class="nav-item ">
+        <a class="nav-link" href="{{nav.URI}}">
+            {{nav.Text}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+<form class="form-inline">
+    <div class="top_search_con">
+        <input class=" mr-sm-2" type="text" placeholder="Search Here ...">
+        <span class="top_search_icon">
+            <i class="icon-magnifier"></i>
+        </span>
+    </div>
+</form>

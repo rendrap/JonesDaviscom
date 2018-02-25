@@ -1,0 +1,5 @@
+<nav>
+    {% for nav in site.data.siteNavLinks %}
+    <a href="{{nav.URI}}">{{nav.Text}}</a>
+    {% endfor %}
+</nav>
