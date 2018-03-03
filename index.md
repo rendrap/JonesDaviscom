@@ -1,9 +1,9 @@
 ---
 layout: jones1
 title: baseTitleFromPage
+subTitle: not used yet
 contentImage: meeting_attorneys.jpg
 ---
-
 # INTRODUCTION TO THE FIRM
 
 Jones, Davis & Jackson, is a full service law firm with offices in Dallas, Texas; Denver, Colorado; and Los Angeles, California serving a broad spectrum of clients, including public and closely held corporations, real estate investment, development and management companies, commercial and residential contractors, equipment financing companies, high net worth individuals, professional athletes and management firms, as well as established and development-stage technology companies.

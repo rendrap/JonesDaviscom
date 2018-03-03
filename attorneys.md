@@ -1,6 +1,7 @@
 ---
 layout: jones1
 title: Our Team
+subTitle: not used yet
 contentImage: photos/Conf_Room_510.jpg
 permalink: /attorneys/
 ---
