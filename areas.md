@@ -1,7 +1,7 @@
 ---
 layout: noTheme
 title: Our Team
-detailImage: http://via.placeholder.com/200x200
+contentImage: http://via.placeholder.com/200x200
 ---
 Our attorneys are licensed to practice in Texas, Colorado, California, Nevada, Arkansas and Georgia and before the various state and federal courts in each of those jurisdictions as well as the Fifth, Tenth and Eleventh Circuit Court of Appeals and the United States Supreme Court.
 

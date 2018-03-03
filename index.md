@@ -1,6 +1,7 @@
 ---
-layout: engageTheme/index
+layout: jones1
 title: baseTitleFromPage
+contentImage: meeting_attorneys.jpg
 ---
 
 # INTRODUCTION TO THE FIRM
@@ -12,4 +13,3 @@ Our clients are based in Texas, California, Colorado, Georgia, Massachusetts, Ne
 It is our philosophy and commitment to offer legal work of uncompromising quality with a solutions based approach - all within a fair and cost effective rate structure.
 
 We welcome your interest in our Firm and look forward to serving your legal needs with a level of professionalism and integrity that merits your every confidence.
-

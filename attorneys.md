@@ -1,27 +1,18 @@
 ---
-layout: noTheme
+layout: jones1
 title: Our Team
-detailImage: http://via.placeholder.com/200x200
+contentImage: photos/Conf_Room_510.jpg
+permalink: /attorneys/
 ---
-
-
 # Attorneys
-I feel like there should be content here and not just an image
-![Image of hard working attorneys]({{ page.detailImage }})
 
+this needs the attorney collection
+The current site is out of order so I'm adding a sort to the front matter
 
-{% for attorney in site.attorneys %}
-
-<a href="{{ attorney.url | prepend: site.baseurl }}">{{ attorney.name }}</a>
-
-<h3>{{ attorney.title }}</h3>
-
-<p class="post-excerpt">{{ attorney.description | truncate: 160 }}</p>
-
-{% endfor %}
-
-[webjeda Jekyll collections](https://blog.webjeda.com/jekyll-collections/)
-
-[Reference Kramdown](https://kramdown.gettalong.org/quickref.html#links-and-images)
-
+For the attorney template, start with Matt (mdavis) to build the template.
+Use the front matter of mattdavis.md to build header and image. I'm working on getting the other attorneys layout ot the same.
+Here is the link to th original page: http://www.jonesdavis.com/bios/Davis.htm
+* Note the Practice group which is a collection.
+* Note States Licensed in is also a collection. No sort
+* Ignore tagLine and listImage in front matter, it's for the next iteration
 

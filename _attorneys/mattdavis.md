@@ -1,11 +1,12 @@
 ---
 key: mdavis
 name: Matt Davis
-title: Senior Partner
-states: Texas Japan France
-tagline: Matt is awesome and lives local
+title: Partner
+states: Texas,Fake1,Fake2
+tagline: Not used yet
+practiceAreas: Commercial and Business Litigation, Construction Litigation, Creditor's Rights Litigation, Employment Litigation, Intellectual Property Litigation, Landlord - Tenant Litigation
 listImage: http://via.placeholder.com/100x100
-detailImage: http://via.placeholder.com/200x200
+detailImage: photos/attorney7.jpg
 sortOrder: 20
 ---
 Matt is a Partner and the head of the Firm’s litigation practice.  His practice is exclusively devoted to matters involving general civil and commercial litigation where he has first chair jury and bench trial experience in State and Federal court.  Mr. Davis received his undergraduate degree as a Distinguished Military Graduate, Texas A & M University in 1986.  He received his law degree from Southern Methodist University School of Law in 1989 where he was the Leading Articles Editor, The International Lawyer, 1988-1989.
