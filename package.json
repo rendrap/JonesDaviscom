@@ -30,9 +30,9 @@
     "browsersync"
   ],
   "bugs": {
-    "url": "https://github.com/rendrap/JonesDaviscom/issues"
+    "url": "https://github.com/rendrap/JonesDaviscom/tree/Version2/issues"
   },
-  "homepage": "https://github.com/rendrap/JonesDaviscom",
+  "homepage": "https://github.com/rendrap/JonesDaviscom/tree/Version2",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",

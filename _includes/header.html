@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-md navbar-dark text-white bg-gradient-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-sm-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+
+          {% for item in site.data.settings.navlinks %}
+          <li class="nav-item mx-md-1">
+            <a class="nav-link {% if page.nav-current == item.url %} active {% endif %}" href="{{ item.url }}">{{ item.name }}</a>
+          </li>
+          {% endfor %}
+
+        </ul>
+      </div>
+    </nav>

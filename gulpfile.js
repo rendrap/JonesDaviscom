@@ -6,7 +6,7 @@ var cp          = require('child_process');
 var deploy      = require('gulp-gh-pages');
 var concat      = require('gulp-concat');
 var plumber     = require('gulp-plumber');
-// var sourcemaps  = require('gulp-sourcemaps');
+var sourcemaps  = require('gulp-sourcemaps');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 // const reload = browserSync.reload;
@@ -17,29 +17,20 @@ var messages = {
 /**
  * Push build to gh-pages, using _config-deploy
  */
-gulp.task('deploy',['jekyll-build-deploy'], function () {
-  return gulp.src("./_site/**/*")
-    .pipe(deploy({remoteUrl: 'git@github.com:rendrap/gh-r24.git'}));
-});
-
-// gulp.task('concatScripts', function () {
-//     gulp.src(['js/jquery-2.2.4.min.js',
-//               'js/plugins.js',
-//               'js/functions.js'
-//               'revolution/js/jquery.themepunch.tools.min.js?rev=5.0',
-//               'revolution/js/jquery.themepunch.revolution.min.js?rev=5.0',
-//               'revolution/js/extensions/revolution.extension.video.min.js',
-//               'revolution/js/extensions/revolution.extension.slideanims.min.js',
-//               'revolution/js/extensions/revolution.extension.actions.min.js',
-//               'revolution/js/extensions/revolution.extension.layeranimation.min.js',
-//               'revolution/js/extensions/revolution.extension.kenburn.min.js',
-//               'revolution/js/extensions/revolution.extension.navigation.min.js',
-//               'revolution/js/extensions/revolution.extension.migration.min.js',
-//               'revolution/js/extensions/revolution.extension.parallax.min.js'
-//               ])
-//     .pipe(concat("app.js"))
-//     .pipe(gulp.dest("js"))
+// gulp.task('deploy',['jekyll-build-deploy'], function () {
+//   return gulp.src("./_site/**/*")
+//     .pipe(deploy({remoteUrl: 'git@github.com:rendrap/gh-r24.git'}));
 // });
+
+// Move the javascript files into our /src/js folder
+gulp.task('js', function() {
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
+        .pipe(plumber())
+        .on('error', function (err) {
+        console.error('Error!', err.message);})
+        .pipe(gulp.dest("assets/js"))
+        .pipe(browserSync.reload({stream:true}));
+});
 
 /**
  * Build the Jekyll Site
@@ -69,10 +60,10 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass','js','jekyll-build'], function() {
     browserSync({
         open: false,
-        logPrefix: 'AMP',
+        logPrefix: 'BS4',
         server: {
             baseDir: '_site'
         }
@@ -83,8 +74,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-    return gulp.src('_scss/style.scss')
-        // .pipe(sourcemaps.init())
+    return gulp.src('assets/scss/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(plumber())
         .on('error', function (err) {
             console.error('Error!', err.message);
@@ -94,10 +85,10 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('_site/css'))
+        .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.reload({stream:true}))
-        // .pipe(sourcemaps.write())
-        .pipe(gulp.dest('_includes'));
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('assets/css'));
 });
 
 /**
@@ -105,13 +96,12 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['sass','jekyll-rebuild']);
-    gulp.watch('js/*.js', ['jekyll-rebuild']);
+    gulp.watch('assets/scss/*.scss', ['sass','jekyll-rebuild']);
+    // gulp.watch('assets/js/*.js', ['jekyll-rebuild']);
     gulp.watch('*.md', ['jekyll-rebuild']);
     gulp.watch('_data/*.yml', ['jekyll-rebuild']);
-    gulp.watch('_content/*.md', ['jekyll-rebuild']);
+    // gulp.watch('_content/*.md', ['jekyll-rebuild']);
     gulp.watch(['*.index.html', '_layouts/*.html', '_includes/*.html',
-    'blog/*.html','search/*.html',
     '_posts/*'], ['jekyll-rebuild']);
 });
 

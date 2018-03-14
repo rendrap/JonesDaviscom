@@ -1,8 +1,9 @@
 ---
-layout: jones1
+layout: default
 title: baseTitleFromPage
 subTitle: not used yet
 contentImage: meeting_attorneys.jpg
+nav-current: '/'
 ---
 # INTRODUCTION TO THE FIRM
 
