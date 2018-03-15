@@ -1,7 +1,7 @@
 {
-  "name": "browser-sync-jekyll",
+  "name": "Jekyll Bootstrap 4 site",
   "version": "0.0.0",
-  "description": "Law firm Jekyll Bootstrap 4",
+  "description": "A lawfirm Jekyll Bootstrap 4 site",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
