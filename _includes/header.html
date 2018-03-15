@@ -24,7 +24,7 @@
 
             {% for item in site.data.settings.navlinks %}
             <li class="nav-item mx-md-1">
-              <a class="nav-link {% if page.nav-current == item.url %} active {% endif %}" href="{{ item.url }}">{{ item.name }}</a>
+              <a class="nav-link {% if page.nav-current == item.url %} active {% endif %}" href="{{ item.url | relative_url }}">{{ item.name }}</a>
             </li>
             {% endfor %}
 
