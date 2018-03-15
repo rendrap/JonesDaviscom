@@ -9,6 +9,15 @@ $enable-gradients: true;
   background: linear-gradient(to bottom,  rgba(196,192,178,0.65) 0%,rgba(196,192,178,0.47) 17%,rgba(180,178,164,0.32) 50%,rgba(163,162,148,0.51) 87%,rgba(163,162,148,0.65) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6c4c0b2', endColorstr='#a6a3a294',GradientType=0 );
 }
+
+.navbar-brand span {
+  font-size: 120%;
+}
+.bronze {
+  color: #B87B3C;
+}
+
+
 // Bootstrap and its default variables
 @import "node_modules/bootstrap/scss/bootstrap";
 
