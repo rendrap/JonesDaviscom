@@ -7,6 +7,8 @@ var deploy      = require('gulp-gh-pages');
 var concat      = require('gulp-concat');
 var plumber     = require('gulp-plumber');
 var sourcemaps  = require('gulp-sourcemaps');
+var cleanCSS = require('gulp-clean-css');
+var rename = require("gulp-rename");
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 // const reload = browserSync.reload;
@@ -89,6 +91,20 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({stream:true}))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('assets/css'));
+});
+
+// Minify CSS
+gulp.task('css-clean', function() {
+  return gulp.src([
+      './assets/css/*.css',
+      '!./assets/css/*.min.css'
+    ])
+    .pipe(cleanCSS())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./assets/css'))
+    .pipe(browserSync.reload({stream:true}));
 });
 
 /**

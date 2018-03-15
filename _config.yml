@@ -12,7 +12,7 @@ plugins:
   # - jekyll-feed
   # - jekyll-paginate
 keep_files: [images]
-exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json", ".jekyll-metadata","uru_rt.exe","source-code","fonts","uru*"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json", ".jekyll-metadata","uru_rt.exe","source-code","fonts","uru*","assets/img/PSD"]
 collections:
   content:
     output: true

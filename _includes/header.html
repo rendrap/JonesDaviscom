@@ -1,17 +1,36 @@
-<nav class="navbar navbar-expand-md navbar-dark text-white bg-gradient-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<header>
 
-      <div class="collapse navbar-collapse justify-content-sm-center" id="navbarsExample08">
-        <ul class="navbar-nav">
+  <div class="d-flex justify-content-center align-items-center bg-gradient-header">
+    <div class="col-xl-2 d-sm-none d-md-block">
+    </div>
+    <div class="col-md-6 col-xl-4 col-sm-12 text-center">
+      <img src={{ "./assets/img/title_left_transparent.png" | relative_url }}>
+    </div>
+    <div class="col-md-6 col-xl-4 text-center d-sm-none d-none d-md-block">
+      <img src={{ "./assets/img/title_right_transparent.png" | relative_url }}>
+    </div>
+    <div class="col-xl-2 d-sm-none d-md-block">
+    </div>
+  </div>
 
-          {% for item in site.data.settings.navlinks %}
-          <li class="nav-item mx-md-1">
-            <a class="nav-link {% if page.nav-current == item.url %} active {% endif %}" href="{{ item.url | relative_url }}">{{ item.name }}</a>
-          </li>
-          {% endfor %}
+  <nav class="navbar navbar-expand-md navbar-dark text-white bg-gradient-dark">
 
-        </ul>
-      </div>
-    </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-sm-center" id="navbarsExample08">
+          <ul class="navbar-nav">
+
+            {% for item in site.data.settings.navlinks %}
+            <li class="nav-item mx-md-1">
+              <a class="nav-link {% if page.nav-current == item.url %} active {% endif %}" href="{{ item.url }}">{{ item.name }}</a>
+            </li>
+            {% endfor %}
+
+          </ul>
+        </div>
+
+  </nav>
+
+</header>
