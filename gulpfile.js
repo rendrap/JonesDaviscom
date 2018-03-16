@@ -7,8 +7,10 @@ var deploy      = require('gulp-gh-pages');
 var concat      = require('gulp-concat');
 var plumber     = require('gulp-plumber');
 var sourcemaps  = require('gulp-sourcemaps');
-var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
+var cleanCSS    = require('gulp-clean-css');
+var newer       = require('gulp-newer');
+var rename      = require("gulp-rename");
+const reload    = browserSync.reload;
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 // const reload = browserSync.reload;
@@ -42,6 +44,7 @@ gulp.task('jekyll-build', function (done) {
     // return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
     return cp.spawn( jekyll , ['build','--incremental'], {stdio: 'inherit'})
         .on('close', done);
+    reload;
 });
 
 gulp.task('jekyll-build-deploy', function (done) {
@@ -50,7 +53,6 @@ gulp.task('jekyll-build-deploy', function (done) {
     return cp.spawn( jekyll , ['build','--config', '_config-deploy.yml'], {stdio: 'inherit'})
         .on('close', done);
 });
-
 
 /**
  * Rebuild Jekyll & do page reload
@@ -77,17 +79,20 @@ gulp.task('browser-sync', ['sass','js','jekyll-build'], function() {
  */
 gulp.task('sass', function () {
     return gulp.src('assets/scss/*.scss')
+        .pipe(newer('assets/scss-temp/'))
         .pipe(sourcemaps.init())
         .pipe(plumber())
         .on('error', function (err) {
             console.error('Error!', err.message);
         })
+        .pipe(gulp.dest('assets/scss-temp'))
         .pipe(sass({
             includePaths: ['scss'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('assets/css'))
+        .pipe(gulp.dest('_site/assets/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('assets/css'));
@@ -112,7 +117,8 @@ gulp.task('css-clean', function() {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('assets/scss/*.scss', ['sass','jekyll-rebuild']);
+    gulp.watch('assets/scss/bootstrap.scss', ['sass','jekyll-rebuild']);
+    gulp.watch('assets/scss/custom.scss', ['sass']);
     // gulp.watch('assets/js/*.js', ['jekyll-rebuild']);
     gulp.watch('*.md', ['jekyll-rebuild']);
     gulp.watch('_data/*.yml', ['jekyll-rebuild']);

@@ -1,6 +1,4 @@
-// My variable overrides
-$enable-shadows: true;
-$enable-gradients: true;
+/* ---- HEADER START---- */
 
 // $navbar-dark-hover-color: #FFFFFF;
 .bg-gradient-header {
@@ -17,7 +15,18 @@ $enable-gradients: true;
   color: #B87B3C;
 }
 
+.sidebar {
+  background: -moz-linear-gradient(left,  rgba(255,255,255,0.21) 0%, rgba(254,254,253,0.21) 4%, rgba(245,246,242,0.23) 28%, rgba(229,231,220,0.54) 75%, rgba(223,226,213,0.61) 91%, rgba(223,226,213,0.65) 100%);
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,0.21) 0%,rgba(254,254,253,0.21) 4%,rgba(245,246,242,0.23) 28%,rgba(229,231,220,0.54) 75%,rgba(223,226,213,0.61) 91%,rgba(223,226,213,0.65) 100%);
+  background: linear-gradient(to right,  rgba(255,255,255,0.21) 0%,rgba(254,254,253,0.21) 4%,rgba(245,246,242,0.23) 28%,rgba(229,231,220,0.54) 75%,rgba(223,226,213,0.61) 91%,rgba(223,226,213,0.65) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36ffffff', endColorstr='#a6dfe2d5',GradientType=1 );
 
-// Bootstrap and its default variables
-@import "node_modules/bootstrap/scss/bootstrap";
+  -webkit-box-shadow: 0px 2px 4px 2px rgba(153,153,153,0.82);
+  box-shadow: 0px 2px 4px 2px rgba(153,153,153,0.82);
 
+  height: 100vh;
+
+  // border-right: solid 1px #BBBBBB;
+
+}
+/* ---- HEADER END---- */

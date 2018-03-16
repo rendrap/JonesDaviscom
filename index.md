@@ -1,8 +1,8 @@
 ---
 layout: default
-title: baseTitleFromPage
+title:
 subTitle: not used yet
-contentImage: meeting_attorneys.jpg
+sidebar-img: waiting_room.jpg
 nav-current: '/'
 ---
 # INTRODUCTION TO THE FIRM
