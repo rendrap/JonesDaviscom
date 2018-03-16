@@ -14,5 +14,24 @@ plugins:
 keep_files: [images]
 exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json", ".jekyll-metadata","uru_rt.exe","source-code","fonts","uru*","assets/img/PSD","assets/scss-temp/"]
 collections:
-  content:
+  practiceLitigation:
     output: true
+    permalink: /practice_areas/:name
+  practiceTransaction:
+    output: true
+    permalink: /practice_areas/:name
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "practiceLitigation"
+    values:
+      layout: "default"
+      nav-current: practice_areas/
+  - scope:
+      path: ""
+      type: "practiceTransaction"
+    values:
+      layout: "default"
+      nav-current: practice_areas/
