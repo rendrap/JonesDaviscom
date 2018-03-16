@@ -4,7 +4,7 @@ key: businessAndCorporate
 title: Business and Corporate
 tagline: Not used yet
 listImage: http://via.placeholder.com/100x100
-detailImage: photos/bus_comm.jpg
+content-img: bus_comm.jpg
 sortOrder: 10
 ---
 Our attorneys have a broad range of general business and corporate experience which includes advice and counsel to clients regarding the acquisition and sale of businesses (stock and asset transactions), capital financing transactions, corporate governance, franchise operations, negotiation and drafting of commercial agreements and secured transactions.
@@ -13,7 +13,7 @@ Other areas of substantial practice experience include the representation of sta
 
 Our practice also encompasses the negotiation and drafting of agreements relating to shareholders, executive employment (including parachute and non-competition provisions) as well as strategic and succession planning.
 
-## Significant transactions include:
+##### Significant transactions include:
 
 * Assessment, consultation and drafting of documentation for the restructure of a privately held international seller of nutritional supplements.
 

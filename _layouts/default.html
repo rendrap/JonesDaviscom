@@ -32,15 +32,24 @@
         <main class="col-12 col-md-9 col-xl-8 pt-md-3 pl-md-5" role="main">
 
             <article>
-                {% if page.title %}<h3 class="mb-0">{{ page.title }}</h3>{% endif %}
-                {% if page.subtitle %}<h5 class="mb-0">{{ page.subtitle }}</h5>{% endif %}
+
+                {% if page.key %}
+                <h3 class="mb-0 d-inline">{{ page.group }}</h3><h5 class="mb-0 d-inline"> - {{ page.title }}</h3>
+                {% else %}
+                    {% if page.title %}<h3 class="mb-0">{{ page.title }}</h3>{% endif %}
+                    {% if page.subtitle %}<h5 class="mb-0">{{ page.subtitle }}</h5>{% endif %}
+                {% endif %}
                 <hr class="mt-1 black-divider">
 
                 {% if page.content-img %}
-                <img class="float-right mt-2" src={{ "assets/photos/" | relative_url }}{{ page.content-img}}>
+                <img class="float-right mt-2 pl-3" src={{ "assets/photos/" | relative_url }}{{ page.content-img}}>
                 {% endif %}
 
                 {{ content }}
+
+                {% if page.key %}
+                    <a class="text-size-90 badge badge-dark" href="javascript:history.back()"> <img src={{ "assets/img/ic_chevron_left_white_24px.svg" | relative_url }} alt="Previous icon">Back to previous </a>
+                {% endif %}
             </article>
 
             {% include footer.html %}

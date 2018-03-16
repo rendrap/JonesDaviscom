@@ -41,17 +41,32 @@ $bronze: #B87B3C;
   color: $bronze;
 }
 
+
+
 .j-square {
   list-style-type: square;
 }
 /* --------  HEADER END --------  */
 
 
+
+
 /* --------  MAIN CONTENT START --------  */
 hr.black-divider {
   border-top: solid 1px #32303E;
 }
+
+main article li {
+  list-style-type: square;
+}
+
+main article a img {
+  height: 16px;
+  width: 16px;
+}
 /* -------- MAIN CONTENT END --------  */
+
+
 
 
 /* --------  FOOTER START --------  */
