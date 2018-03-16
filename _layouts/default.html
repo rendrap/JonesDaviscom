@@ -9,15 +9,22 @@
 
 <div class="container-fluid">
     <div class="row flex-xl-nowrap">
-        <div class="d-none d-md-block col-md-3 col-xl-2 text-center sidebar">
+        <div class="mh-100 d-none d-md-block col-md-3 col-xl-2 text-center sidebar">
             {% if page.sidebar-img %}
-            <img class="" src={{ "assets/photos/" | relative_url }}{{ page.sidebar-img}}>
+            <img class="mt-4" src={{ "assets/photos/" | relative_url }}{{ page.sidebar-img}}>
             {% endif %}
         </div>
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 pt-md-3 pl-md-5 bd-content" role="main">
 
             <article>
+                {% if page.title %}<h3 class="mb-0">{{ page.title }}</h3>{% endif %}
+                {% if page.subtitle %}<h4 class="mb-0">{{ page.subtitle }}</h4>{% endif %}
+                <hr class="mt-1 black-divider">
+
+                {% if page.content-img %}
+                <img class="float-right mt-2" src={{ "assets/photos/" | relative_url }}{{ page.content-img}}>
+                {% endif %}
 
                 {{ content }}
             </article>
