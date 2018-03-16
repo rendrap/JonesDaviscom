@@ -6,7 +6,6 @@ tagline: Not used yet
 listImage: http://via.placeholder.com/100x100
 detailImage: photos/bus_comm.jpg
 sortOrder: 10
-nav-current: 'practice_areas/'
 ---
 Our attorneys have a broad range of general business and corporate experience which includes advice and counsel to clients regarding the acquisition and sale of businesses (stock and asset transactions), capital financing transactions, corporate governance, franchise operations, negotiation and drafting of commercial agreements and secured transactions.
 

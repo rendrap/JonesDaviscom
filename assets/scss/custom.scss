@@ -1,3 +1,5 @@
+$bronze: #B87B3C;
+
 /* -------- HEADER START -------- */
 
 // $navbar-dark-hover-color: #FFFFFF;
@@ -12,7 +14,7 @@
   font-size: 120%;
 }
 .bronze {
-  color: #B87B3C;
+  color: $bronze;
 }
 
 .sidebar {
@@ -28,6 +30,19 @@
 
 #sidebar li a {
   color: #000;
+
+  &:hover {
+    color: $bronze;
+    text-decoration: none;
+  }
+}
+
+#sidebar li:hover {
+  color: $bronze;
+}
+
+.j-square {
+  list-style-type: square;
 }
 /* --------  HEADER END --------  */
 
