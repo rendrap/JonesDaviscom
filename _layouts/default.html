@@ -21,7 +21,7 @@
                 <h6 class="mt-3 text-left font-weight-bold">Transaction Practice</h6>
                 <ul class="text-left pl-3 text-size-90 j-square">
                     {% for item in site.practiceTransaction %}
-                        <li {% if item.title == page.title %} class="font-weight-bold"{% endif %}><a href="{{ item.url | append: ".html" }}">{{ item.title }}</a></li>
+                        <li {% if item.title == page.title %} class="font-weight-bold"{% endif %}><a href="{{ item.url | relative_url | append: ".html" }}">{{ item.title }}</a></li>
                     {% endfor %}
                 </ul>
             {% endif %}
