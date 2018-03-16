@@ -120,8 +120,8 @@ gulp.task('watch', function () {
     gulp.watch('assets/scss/bootstrap.scss', ['sass','jekyll-rebuild']);
     gulp.watch('assets/scss/custom.scss', ['sass']);
     // gulp.watch('assets/js/*.js', ['jekyll-rebuild']);
-    gulp.watch('*.md', ['jekyll-rebuild']);
-    gulp.watch('_data/*.yml', ['jekyll-rebuild']);
+    gulp.watch(['*.md','*/*.md'], ['jekyll-rebuild']);
+    gulp.watch(['*.yml','_data/*.yml'], ['jekyll-rebuild']);
     // gulp.watch('_content/*.md', ['jekyll-rebuild']);
     gulp.watch(['*.index.html', '_layouts/*.html', '_includes/*.html',
     '_posts/*'], ['jekyll-rebuild']);

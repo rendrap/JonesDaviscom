@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Practice Areas
+group: enable
 subtitle:
 sidebar-img:
 content-img: hall_way.jpg

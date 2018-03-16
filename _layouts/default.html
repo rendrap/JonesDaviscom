@@ -9,12 +9,26 @@
 
 <div class="container-fluid">
     <div class="row flex-xl-nowrap">
-        <div class="d-none d-md-block col-md-3 col-xl-2 text-center sidebar j-sidebar">
+        <!-- SIDEBAR -->
+        <div id="sidebar" class="d-none d-md-block col-md-3 col-xl-2 text-center sidebar j-sidebar">
+
             {% if page.sidebar-img %}
             <img class="mt-4" src={{ "assets/photos/" | relative_url }}{{ page.sidebar-img}}>
             {% endif %}
-        </div>
 
+
+            {% if page.group %}
+                <h6 class="mt-3 text-left">Transaction Practice</h6>
+                <ul class="text-left pl-3 text-size-90">
+                    {% for item in site.practiceTransaction %}
+                        <li><a href="{{ item.url | append: ".html" }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+        </div><!-- SIDEBAR END -->
+
+        <!-- MAIN-CONTENT AREA -->
         <main class="col-12 col-md-9 col-xl-8 pt-md-3 pl-md-5" role="main">
 
             <article>
