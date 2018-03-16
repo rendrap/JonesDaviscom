@@ -6,30 +6,35 @@
 <body>
 
 {% include header.html %}
-<div class="wrapper">
-    <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-24-24 pure-u-sm-24-24 content-wrapper">
+
+<div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+        <div class="mh-100 d-none d-md-block col-md-3 col-xl-2 text-center sidebar">
+            {% if page.sidebar-img %}
+            <img class="mt-4" src={{ "assets/photos/" | relative_url }}{{ page.sidebar-img}}>
+            {% endif %}
+        </div>
+
+        <main class="col-12 col-md-9 col-xl-8 pt-md-3 pl-md-5 bd-content" role="main">
 
             <article>
-                {% if page.seo-title %}
-                <h1 class="margin10">{{page.seo-title}}</h1>
-                {% else %}
-                <h1 class="margin10">{{page.title}}</h1>
-                {% endif %}
+                {% if page.title %}<h3 class="mb-0">{{ page.title }}</h3>{% endif %}
+                {% if page.subtitle %}<h4 class="mb-0">{{ page.subtitle }}</h4>{% endif %}
+                <hr class="mt-1 black-divider">
 
-                {% if page.teaserimage %}
+                {% if page.content-img %}
+                <img class="float-right mt-2" src={{ "assets/photos/" | relative_url }}{{ page.content-img}}>
                 {% endif %}
 
                 {{ content }}
             </article>
 
-        </div>
+            {% include footer.html %}
+        </main>
 
     </div>
 
 </div>
-
-{% include footer.html %}
 
 </body>
 </html>
