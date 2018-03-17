@@ -1,12 +1,11 @@
 ---
-layout: jones1
-title: Our Team
+layout: default
+title: Attorneys
 subTitle: not used yet
-contentImage: photos/Conf_Room_510.jpg
+content-img: Conf_Room_510.jpg
+nav-current: 'attorneys/'
 permalink: /attorneys/
 ---
-# Attorneys
-
 this needs the attorney collection
 The current site is out of order so I'm adding a sort to the front matter
 

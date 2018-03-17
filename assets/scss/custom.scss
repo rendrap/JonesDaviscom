@@ -64,6 +64,11 @@ main article a img {
   height: 16px;
   width: 16px;
 }
+
+main > article > p > a {
+  color: var(--dark);
+  text-decoration: underline;
+}
 /* -------- MAIN CONTENT END --------  */
 
 
