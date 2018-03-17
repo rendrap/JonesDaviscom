@@ -1,7 +1,7 @@
 ---
 group: Transaction Practice
 key: IntellectualProperty
-title: Intellectual Property
+title: Intellectual Property.
 tagline: Not used yet
 listImage: http://via.placeholder.com/100x100
 content-img: i_property.jpg

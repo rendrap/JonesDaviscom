@@ -16,10 +16,13 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json", ".
 collections:
   practiceLitigation:
     output: true
-    permalink: /practice_areas/:name
+    permalink: /practice_areas/litigation/:name
   practiceTransaction:
     output: true
-    permalink: /practice_areas/:name
+    permalink: /practice_areas/transaction/:name
+  practiceChurch:
+    output: true
+    permalink: /practice_areas/church/:name
   attorneys:
     output: true
     permalink: /attorneys/:name
@@ -35,6 +38,12 @@ defaults:
   - scope:
       path: ""
       type: "practiceTransaction"
+    values:
+      layout: "default"
+      nav-current: practice_areas/
+  - scope:
+      path: ""
+      type: "practiceChurch"
     values:
       layout: "default"
       nav-current: practice_areas/
