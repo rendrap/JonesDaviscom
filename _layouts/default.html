@@ -47,7 +47,7 @@
 
 
                 {% if page.content-img %}
-                <img class="float-right mt-2 pl-3" src={{ "assets/photos/" | relative_url }}{{ page.content-img}}>
+                <img class="float-right mt-2 pl-3" src={{ "assets/photos/" | relative_url }}{{ page.content-img}}  {% if page.name == 'Spring Rowell' %} height="263" width="212"{% endif %}>
                 {% endif %}
 
                 {% if page.states %}

@@ -12,6 +12,6 @@ permalink: /attorneys/
 [R. Steven Jones]({{ "/attorneys/sjones.html" | relative_url }})<br>
 [Wendy D. Dawer]({{ "/attorneys/wdawer.html" | relative_url }})<br>
 [J. Mark Lewis]({{ "/attorneys/mlewis.html" | relative_url }})<br>
-[Spring Rowell]({{ "/attorneys/srowel.html" | relative_url }})<br>
+[Spring Rowell]({{ "/attorneys/srowell.html" | relative_url }})<br>
 [Scott Meyer]({{ "/attorneys/smeyer.html" | relative_url }})<br>
 [Kevin M. Ross]({{ "/attorneys/kross.html" | relative_url }})<br>
