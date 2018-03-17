@@ -32,7 +32,7 @@
         <!-- MAIN-CONTENT AREA -->
         <main class="col-12 col-md-9 col-xl-8 pt-md-3 pl-md-5" role="main">
 
-            <article>
+            <article {% if page.title == "Contact Us" %} class="text-size-80" {% endif %}>
 
                 {% if page.key %}
                 <h3 class="mb-0 d-inline">{{ page.group }}</h3><h5 class="mb-0 d-inline"> - {{ page.title }}</h3>
