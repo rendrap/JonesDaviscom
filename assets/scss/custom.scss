@@ -73,6 +73,27 @@ main > article p a {
 .j-practice {
   letter-spacing: -0.05em;
 }
+
+#myTab a.nav-link {
+  color: var(--dark);
+  font-weight: 500 !important;
+
+  &:hover {
+    color: #0056b3;
+    font-weight: 500 !important;
+  }
+}
+
+#myTab a.nav-link.active {
+  color: $bronze;
+  font-weight: 500 !important;
+}
+
+#myTabContent li {
+  float: left;
+  width: 33.33%;
+  padding-right: 1rem;
+}
 /* -------- MAIN CONTENT END --------  */
 
 

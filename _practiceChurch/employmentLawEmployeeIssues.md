@@ -1,7 +1,7 @@
 ---
 group: Church And Ministry Law Practice
 key: employmentLawEmployeeIssues
-title:Employment Law; Employee Issues
+title: 'Employment Law, Employee Issues'
 tagline: Not used yet
 listImage: http://via.placeholder.com/100x100
 detailImage: photos/Promissory_Note.jpg
