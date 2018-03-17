@@ -1,4 +1,4 @@
-name: 089-fotograf.de
+name: http://www.jonesdavis.com
 markdown: kramdown
 kramdown:
  input: GFM
@@ -7,11 +7,11 @@ kramdown:
  syntax_highlighter: rouge
  auto_ids: true
  # parse_block_html: true
-repository: 'rendrap/r24'
+repository: 'rendrap/JonesDaviscom'
 plugins:
   # - jekyll-feed
   # - jekyll-paginate
-keep_files: [images]
+# keep_files: [images]
 exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json", ".jekyll-metadata","uru_rt.exe","source-code","fonts","uru*","assets/img/PSD","assets/scss-temp/"]
 collections:
   practiceLitigation:
@@ -20,6 +20,9 @@ collections:
   practiceTransaction:
     output: true
     permalink: /practice_areas/:name
+  attorneys:
+    output: true
+    permalink: /attorneys/:name
 
 
 defaults:
@@ -35,3 +38,9 @@ defaults:
     values:
       layout: "default"
       nav-current: practice_areas/
+  - scope:
+      path: ""
+      type: "attorneys"
+    values:
+      layout: "default"
+      nav-current: attorneys/

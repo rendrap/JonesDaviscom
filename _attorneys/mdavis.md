@@ -6,18 +6,18 @@ states: Texas,Fake1,Fake2
 tagline: Not used yet
 practiceAreas: Commercial and Business Litigation, Construction Litigation, Creditor's Rights Litigation, Employment Litigation, Intellectual Property Litigation, Landlord - Tenant Litigation
 listImage: http://via.placeholder.com/100x100
-detailImage: photos/attorney7.jpg
+content-img: attorney7.jpg
 sortOrder: 20
 ---
 Matt is a Partner and the head of the Firm’s litigation practice.  His practice is exclusively devoted to matters involving general civil and commercial litigation where he has first chair jury and bench trial experience in State and Federal court.  Mr. Davis received his undergraduate degree as a Distinguished Military Graduate, Texas A & M University in 1986.  He received his law degree from Southern Methodist University School of Law in 1989 where he was the Leading Articles Editor, The International Lawyer, 1988-1989.
 
-## PRACTICE EXPERIENCE:
+#### PRACTICE EXPERIENCE:
 
 Matt’s practice focuses on complex commercial litigation, creditor’s rights, construction law, and general commercial litigation.
 
 Matt’s clients include national creditors and equipment leasing companies, local homebuilders and commercial contractors, and numerous entities engaged in various businesses throughout the State of Texas
 
-## EDUCATION:
+#### EDUCATION:
 
 1986-1989     SMU School of Law
 Dallas, Texas
@@ -35,7 +35,7 @@ College Station, Texas
 * Distinguished Student
 * U.S. Army Scholarship
 
-## BAR ADMISSIONS/MEMBERSHIPS:
+#### BAR ADMISSIONS/MEMBERSHIPS:
 * Admitted to practice before the United States Appeals for the Fifth Circuit
 * Admitted to practice before United States District Court for the Northern District of Texas
 * Admitted to practice before United States District Court for the Southern District of Texas
@@ -44,7 +44,7 @@ College Station, Texas
 * Admitted to practice before United States District Court for the District of Colorado
 * State Bar of Texas
 
-## REPORTED DECISIONS:
+#### REPORTED DECISIONS:
 * Mt. Hawley Ins. Co. v. Steve Roberts Custom Builders, Inc., 215 F.Supp.2d 783 (E.D. Tex. 2002)
 * Lawfinders Assoc., Inc. v. Legal Research Center, Inc., 65 F.Supp.2d 414  (N.D. Tex. 1998), aff'd, 193 F.3d 517 (5th Cir. 1999)
 * Crown Sterling, Inc. v. Clark, 815 F.Supp. 199 (N.D. Tex. 1993)
