@@ -34,16 +34,28 @@
 
             <article {% if page.title == "Contact Us" %} class="text-size-80" {% endif %}>
 
-                {% if page.key %}
+                <!-- HEADER FOR PRACTICE AREAS -->
+                {% if page.group and page.key %}
                 <h3 class="mb-0 d-inline">{{ page.group }}</h3><h5 class="mb-0 d-inline"> - {{ page.title }}</h3>
+                {% elsif page.states %}
+                <h3 class="mb-0">Attorneys</h3>
                 {% else %}
                     {% if page.title %}<h3 class="mb-0">{{ page.title }}</h3>{% endif %}
                     {% if page.subtitle %}<h5 class="mb-0">{{ page.subtitle }}</h5>{% endif %}
-                {% endif %}
+                {% endif %}  <!-- HEADER FOR PRACTICE AREAS END -->
                 <hr class="mt-1 black-divider">
+
 
                 {% if page.content-img %}
                 <img class="float-right mt-2 pl-3" src={{ "assets/photos/" | relative_url }}{{ page.content-img}}>
+                {% endif %}
+
+                {% if page.states %}
+                <strong class="text-uppercase d-inline-block mb-2"> {{ page.name }} <br> {{ page.title }} </strong> <br>
+                <strong class="j-practice mb-2 d-inline">Practice Group: {{ page.practiceAreas }}</strong><br>
+                <strong class="d-inline-block my-2"> Licensed In: {{ page.states }} </strong>
+                <br>
+                <hr class="d-flex mt-1 black-divider">
                 {% endif %}
 
                 {{ content }}
