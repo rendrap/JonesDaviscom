@@ -26,6 +26,7 @@ collections:
   attorneys:
     output: true
     permalink: /attorneys/:name
+  locations:
 
 
 defaults:
